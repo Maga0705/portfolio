@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homelab opzetten – Mukhammad Abduev</title>
+<meta name="description" content="Hoe Mukhammad Abduev thuis een eigen server en netwerk opzette met Proxmox, VLAN's en een pfSense-firewall.">
+<link rel="stylesheet" href="css/tailwind.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Ga naar de inhoud</a>
+
+<header class="border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo van Mukhammad Abduev" width="64" height="64" class="rounded">
+    </a>
+    <input type="checkbox" id="menu-knop" class="peer sr-only">
+    <label for="menu-knop" class="cursor-pointer border border-gray-300 rounded-lg block px-3 py-2 md:hidden">Menu</label>
+    <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+      <ul class="flex flex-col md:flex-row md:gap-2 mt-2 md:mt-0">
+        <li><a href="index.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Portfolio</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="max-w-6xl mx-auto px-4 py-8 md:flex md:gap-8">
+
+  <main id="inhoud" class="md:flex-1 min-w-0">
+
+    <p class="mb-6">
+      <a href="portfolio.html" class="text-blue-600 hover:underline">← Terug naar portfolio</a>
+    </p>
+
+    <article>
+      <h1 class="text-2xl font-bold mb-2">Homelab opzetten</h1>
+      <p class="text-gray-600 text-sm mb-6">Oktober 2025</p>
+
+      <figure class="mb-6">
+        <img src="images/sfeerbeeld1.jpeg" alt="Netwerkkabels aangesloten op een switch" width="660" height="1178" class="w-full rounded-lg">
+        <figcaption class="mt-2 text-sm text-gray-600">Sfeerbeeld: netwerkkabels aangesloten op een switch.</figcaption>
+      </figure>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-bold mb-3">Wat is dit project?</h2>
+        <p class="leading-relaxed">
+          Voor dit project heb ik thuis een volledig eigen netwerk en server opgezet. Het doel was om een veilige en beheersbare omgeving te maken waar ik verschillende diensten kan draaien en testen zonder dat dit invloed heeft op mijn gewone netwerk.
+        </p>
+      </section>
+
+      <section class="mb-6">
+        <h2 class="text-lg font-bold mb-3">Wat heb ik gedaan?</h2>
+        <p class="leading-relaxed mb-3">
+          Ik heb een oude laptop omgebouwd tot een server en daarop Proxmox geïnstalleerd. Proxmox is een virtualisatieplatform waarmee je meerdere virtuele machines kunt draaien op één fysieke machine.
+        </p>
+        <p class="leading-relaxed">
+          Daarna heb ik het netwerk gesegmenteerd met VLAN's zodat de homelab-machines in een apart netwerk zitten. Verder heb ik een pfSense firewall geconfigureerd om de toegang te controleren.
+        </p>
+      </section>
+
+      <figure class="mb-6">
+        <img src="images/sfeerbeeld2.jpg" alt="Serverkasten in een datacenter" width="1200" height="801" class="w-full rounded-lg">
+        <figcaption class="mt-2 text-sm text-gray-600">Sfeerbeeld: serverkasten in een datacenter.</figcaption>
+      </figure>
+
+      <section>
+        <h2 class="text-lg font-bold mb-3">Wat heb ik geleerd?</h2>
+        <p class="leading-relaxed">
+          Dit project heeft mij veel geleerd over netwerksegmentatie, virtualisatie en het beheer van Linux-servers. Het was soms moeilijk maar ik heb veel opzoekwerk gedaan en stap voor stap de problemen opgelost.
+        </p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <aside class="mt-8 md:mt-0 md:w-64 shrink-0">
+
+    <div class="bg-gray-100 rounded-lg p-6">
+      <h2 class="font-bold mb-4">Projectinfo</h2>
+      <dl class="space-y-3 text-sm">
+        <div>
+          <dt class="text-gray-600">Type</dt>
+          <dd>Persoonlijk project</dd>
+        </div>
+        <div>
+          <dt class="text-gray-600">Periode</dt>
+          <dd>Oktober 2025</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="mt-4">
+      <a href="portfolio.html" class="block w-full text-center bg-gray-100 text-blue-600 font-bold px-4 py-3 rounded-lg hover:bg-gray-200">← Alle projecten</a>
+    </div>
+
+  </aside>
+
+</div>
+
+<footer class="border-t border-gray-200 py-4">
+  <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-600">
+    <p>&copy; 2026 Mukhammad Abduev – AP Hogeschool Antwerpen</p>
+  </div>
+</footer>
+
+</body>
+</html>
