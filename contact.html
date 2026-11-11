@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Mukhammad Abduev</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Ga naar de inhoud</a>
+
+<header class="border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo van Mukhammad Abduev" width="64" height="64" class="rounded">
+    </a>
+    <input type="checkbox" id="menu-knop" class="peer sr-only">
+    <label for="menu-knop" class="cursor-pointer border border-gray-300 rounded-lg block px-3 py-2 md:hidden">Menu</label>
+    <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+      <ul class="flex flex-col md:flex-row md:gap-2 mt-2 md:mt-0">
+        <li><a href="index.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Portfolio</a></li>
+        <li><a href="contact.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="max-w-6xl mx-auto px-4 py-8 md:flex md:gap-8">
+
+  <main id="inhoud" class="md:flex-1 min-w-0">
+
+    <h1 class="text-2xl font-bold mb-2">Contact</h1>
+    <p class="text-gray-600 mb-8">Heb je een vraag of wil je samenwerken? Stuur me een bericht.</p>
+
+    <form action="#" method="post" class="space-y-4">
+
+      <div>
+        <label for="naam" class="block font-bold mb-1">Naam</label>
+        <input type="text" id="naam" name="naam" autocomplete="name" required placeholder="Je naam"
+          class="w-full border border-gray-300 rounded-lg p-2">
+      </div>
+
+      <div>
+        <label for="email" class="block font-bold mb-1">E-mailadres</label>
+        <input type="email" id="email" name="email" autocomplete="email" required placeholder="jouw@email.com"
+          class="w-full border border-gray-300 rounded-lg p-2">
+      </div>
+
+      <div>
+        <label for="onderwerp" class="block font-bold mb-1">Onderwerp</label>
+        <input type="text" id="onderwerp" name="onderwerp" autocomplete="off" placeholder="Waarover gaat je bericht?"
+          class="w-full border border-gray-300 rounded-lg p-2">
+      </div>
+
+      <div>
+        <label for="bericht" class="block font-bold mb-1">Bericht</label>
+        <textarea id="bericht" name="bericht" rows="5" required placeholder="Schrijf hier je bericht..."
+          class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+      </div>
+
+      <button type="submit" class="inline-flex items-center gap-2 bg-blue-600 text-white font-bold px-6 py-3 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        Verstuur bericht
+      </button>
+
+    </form>
+
+  </main>
+
+  <aside class="mt-8 md:mt-0 md:w-64 shrink-0">
+
+    <div class="bg-gray-100 rounded-lg p-6">
+      <h2 class="font-bold mb-4">Contactgegevens</h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 mt-0.5 shrink-0" aria-hidden="true">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <div>
+            <p class="text-sm text-gray-600">E-mail</p>
+            <a href="mailto:s167266@ap.be" class="text-blue-600 hover:underline text-sm break-all">s167266@ap.be</a>
+          </div>
+        </li>
+        <li>
+          <p class="text-sm text-gray-600">Locatie</p>
+          <p class="text-sm">Antwerpen, België</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-gray-100 rounded-lg p-6 mt-4">
+      <p class="text-sm text-gray-600 leading-relaxed">Antwoord binnen 1-2 werkdagen.</p>
+    </div>
+
+  </aside>
+
+</div>
+
+<footer class="border-t border-gray-200 py-4">
+  <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-600">
+    <p>&copy; 2026 Mukhammad Abduev – AP Hogeschool Antwerpen</p>
+  </div>
+</footer>
+
+</body>
+</html>

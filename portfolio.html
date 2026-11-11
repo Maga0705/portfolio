@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio – Mukhammad Abduev</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Ga naar de inhoud</a>
+
+<header class="border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo van Mukhammad Abduev" width="64" height="64" class="rounded">
+    </a>
+    <input type="checkbox" id="menu-knop" class="peer sr-only">
+    <label for="menu-knop" class="cursor-pointer border border-gray-300 rounded-lg block px-3 py-2 md:hidden">Menu</label>
+    <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+      <ul class="flex flex-col md:flex-row md:gap-2 mt-2 md:mt-0">
+        <li><a href="index.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Home</a></li>
+        <li><a href="portfolio.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Portfolio</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inhoud" class="max-w-6xl mx-auto px-4 py-8">
+
+  <h1 class="text-2xl font-bold mb-2">Portfolio</h1>
+  <p class="text-gray-600 mb-8">Een overzicht van mijn projecten en wat ik heb geleerd.</p>
+
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+    <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <img src="images/sfeerbeeld1.jpeg" alt="Overzicht van mijn homelab setup" width="660" height="1178" class="w-full aspect-video object-cover">
+      <div class="p-5">
+        <h2 class="font-bold">Homelab opzetten</h2>
+        <p class="text-gray-600 text-sm mt-2">Een thuis-netwerk met eigen server en virtuele machines opgezet.</p>
+        <p class="text-gray-600 text-sm mt-1">Linux, Proxmox, netwerken</p>
+        <a href="project.html" class="mt-4 inline-block text-blue-600 hover:underline text-sm font-bold">Bekijk project →</a>
+      </div>
+    </article>
+
+    <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <img src="images/sfeerbeeld2.jpeg" alt="De losse hardware onderdelen voor de pc" width="1200" height="873" class="w-full aspect-video object-cover">
+      <div class="p-5">
+        <h2 class="font-bold">PC bouwen</h2>
+        <p class="text-gray-600 text-sm mt-2">Zelf een pc samengesteld van losse onderdelen en geconfigureerd.</p>
+        <p class="text-gray-600 text-sm mt-1">Hardware, Windows, BIOS</p>
+        <a href="project.html" class="mt-4 inline-block text-blue-600 hover:underline text-sm font-bold">Bekijk project →</a>
+      </div>
+    </article>
+
+    <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <img src="images/sfeerbeeld3.jpeg" alt="Een terminal met Linux-commando's" width="1200" height="824" class="w-full aspect-video object-cover">
+      <div class="p-5">
+        <h2 class="font-bold">Linux CLI</h2>
+        <p class="text-gray-600 text-sm mt-2">De Linux command line geleerd voor systeembeheer en automatisering.</p>
+        <p class="text-gray-600 text-sm mt-1">Linux, Bash, Shell</p>
+        <a href="project.html" class="mt-4 inline-block text-blue-600 hover:underline text-sm font-bold">Bekijk project →</a>
+      </div>
+    </article>
+
+    <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <img src="images/sfeerbeeld1.jpeg" alt="Netwerktopologie diagram van de configuratie" width="660" height="1178" class="w-full aspect-video object-cover">
+      <div class="p-5">
+        <h2 class="font-bold">Netwerk configureren</h2>
+        <p class="text-gray-600 text-sm mt-2">Een kleinschalig netwerk opgezet met VLAN's, routing en DHCP.</p>
+        <p class="text-gray-600 text-sm mt-1">Cisco, VLAN, routing</p>
+        <a href="project.html" class="mt-4 inline-block text-blue-600 hover:underline text-sm font-bold">Bekijk project →</a>
+      </div>
+    </article>
+
+    <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <img src="images/sfeerbeeld2.jpeg" alt="Firewall regels in een beheerinterface" width="1200" height="873" class="w-full aspect-video object-cover">
+      <div class="p-5">
+        <h2 class="font-bold">Firewall instellen</h2>
+        <p class="text-gray-600 text-sm mt-2">Een pfSense-firewall geconfigureerd om het thuisnetwerk te beveiligen.</p>
+        <p class="text-gray-600 text-sm mt-1">pfSense, beveiliging, firewall</p>
+        <a href="project.html" class="mt-4 inline-block text-blue-600 hover:underline text-sm font-bold">Bekijk project →</a>
+      </div>
+    </article>
+
+    <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <img src="images/sfeerbeeld3.jpeg" alt="Schermafbeelding van virtuele machines in Proxmox" width="1200" height="824" class="w-full aspect-video object-cover">
+      <div class="p-5">
+        <h2 class="font-bold">Virtualisatie met VM's</h2>
+        <p class="text-gray-600 text-sm mt-2">Meerdere virtuele machines opgezet op Proxmox voor testen en leren.</p>
+        <p class="text-gray-600 text-sm mt-1">Proxmox, VM's, virtualisatie</p>
+        <a href="project.html" class="mt-4 inline-block text-blue-600 hover:underline text-sm font-bold">Bekijk project →</a>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer class="border-t border-gray-200 py-4">
+  <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-600">
+    <p>&copy; 2026 Mukhammad Abduev – AP Hogeschool Antwerpen</p>
+  </div>
+</footer>
+
+</body>
+</html>

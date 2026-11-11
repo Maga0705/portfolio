@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home – Mukhammad Abduev</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Ga naar de inhoud</a>
+
+<header class="border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Logo van Mukhammad Abduev" width="64" height="64" class="rounded">
+    </a>
+    <input type="checkbox" id="menu-knop" class="peer sr-only">
+    <label for="menu-knop" class="cursor-pointer border border-gray-300 rounded-lg block px-3 py-2 md:hidden">Menu</label>
+    <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+      <ul class="flex flex-col md:flex-row md:gap-2 mt-2 md:mt-0">
+        <li><a href="index.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Home</a></li>
+        <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Portfolio</a></li>
+        <li><a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="max-w-6xl mx-auto px-4 py-8 md:flex md:gap-8">
+
+  <main id="inhoud" class="md:flex-1 min-w-0">
+
+    <section class="relative overflow-hidden rounded-lg mb-8 bg-[url(images/sfeerbeeld1.jpeg)] bg-cover bg-center">
+      <div class="absolute inset-0 bg-[rgba(0,0,0,0.55)]"></div>
+      <div class="relative z-10 px-6 py-16 text-center">
+        <h1 class="text-3xl font-bold text-white mb-2">Hallo, ik ben Ali</h1>
+        <p class="text-white text-lg">SNB-student aan de AP Hogeschool Antwerpen</p>
+        <a href="portfolio.html" class="mt-6 inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg">Bekijk mijn werk</a>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">Over mij</h2>
+      <p class="leading-relaxed">
+        Ik ben Mukhammad Abduev, maar iedereen noemt mij Ali. Ik studeer Systeem- en Netwerkbeheer aan de AP Hogeschool. Netwerken beveiligen en opzoekwerk doen in de IT-wereld vind ik interessant.
+      </p>
+      <p class="leading-relaxed mt-3">
+        In mijn vrije tijd heb ik al een homelab opgezet, pc's in elkaar gezet en de Linux command line leren gebruiken. Mijn doel is om later netwerkbeheerder te worden.
+      </p>
+      <p class="mt-4">
+        <a href="contact.html" class="text-blue-600 hover:underline">Neem contact op →</a>
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold mb-4">Recente projecten</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+        <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+          <img src="images/sfeerbeeld1.jpeg" alt="Overzicht van mijn homelab setup" width="660" height="1178" class="w-full aspect-video object-cover">
+          <div class="p-4">
+            <h3 class="font-bold mb-1">Homelab opzetten</h3>
+            <p class="text-sm text-gray-600 mb-2">Een thuis-netwerk met eigen server en virtuele machines opgezet.</p>
+            <a href="project.html" class="text-blue-600 hover:underline text-sm">Bekijk project →</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+          <img src="images/sfeerbeeld2.jpeg" alt="De losse onderdelen van de pc die ik heb gebouwd" width="1200" height="873" class="w-full aspect-video object-cover">
+          <div class="p-4">
+            <h3 class="font-bold mb-1">PC bouwen</h3>
+            <p class="text-sm text-gray-600 mb-2">Zelf een pc samengesteld van losse hardware en geconfigureerd.</p>
+            <a href="project.html" class="text-blue-600 hover:underline text-sm">Bekijk project →</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+          <img src="images/sfeerbeeld3.jpeg" alt="Een terminal met Linux-commando's" width="1200" height="824" class="w-full aspect-video object-cover">
+          <div class="p-4">
+            <h3 class="font-bold mb-1">Linux CLI</h3>
+            <p class="text-sm text-gray-600 mb-2">De Linux command line leren voor beheer en automatisering.</p>
+            <a href="project.html" class="text-blue-600 hover:underline text-sm">Bekijk project →</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="mt-4">
+        <a href="portfolio.html" class="text-blue-600 hover:underline">Alle projecten bekijken →</a>
+      </p>
+    </section>
+
+  </main>
+
+  <aside class="mt-8 md:mt-0 md:w-64 shrink-0">
+
+    <div class="bg-gray-100 rounded-lg p-6 text-center">
+      <img src="images/profielfoto.jpg" alt="Profielfoto van Ali" width="400" height="400" class="rounded-full w-32 h-32 object-cover mx-auto mb-4">
+      <p class="font-bold">Mukhammad Abduev</p>
+      <p class="text-sm text-gray-600">Ali</p>
+      <p class="text-blue-600 text-sm mt-1">SNB – AP Hogeschool</p>
+
+      <p class="mt-4">
+        <a href="mailto:s167266@ap.be" class="inline-flex rounded-full p-2 text-blue-600 hover:bg-gray-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span class="sr-only">Stuur een e-mail naar s167266@ap.be</span>
+        </a>
+      </p>
+    </div>
+
+    <div class="bg-gray-100 rounded-lg p-6 mt-4">
+      <h2 class="font-bold mb-3">Vaardigheden</h2>
+      <ul class="space-y-1 text-gray-600 text-sm">
+        <li>Netwerken (CCNA)</li>
+        <li>Linux CLI</li>
+        <li>Virtualisatie</li>
+        <li>Netwerk beveiliging</li>
+        <li>Hardware assemblage</li>
+        <li>Windows Server</li>
+      </ul>
+    </div>
+
+  </aside>
+
+</div>
+
+<footer class="border-t border-gray-200 py-4">
+  <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-600">
+    <p>&copy; 2026 Mukhammad Abduev – AP Hogeschool Antwerpen</p>
+  </div>
+</footer>
+
+</body>
+</html>
