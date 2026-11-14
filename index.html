@@ -1,138 +1,127 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home – Mukhammad Abduev</title>
-<meta name="description" content="Portfolio van Mukhammad Abduev, student systeem- en netwerkbeheer aan AP Hogeschool Antwerpen. Bekijk mijn projecten rond netwerken en Linux.">
-<link rel="stylesheet" href="css/tailwind.css">
-<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mukhammad Abduev - portfolio van een student systeem- en netwerkbeheer</title>
+	<meta name="description" content="Portfolio van Mukhammad Abduev, student systeem- en netwerkbeheer aan AP Hogeschool Antwerpen. Bekijk mijn projecten rond netwerken en Linux.">
+	<link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
-<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:bg-white focus:px-4 focus:py-2 focus:rounded-lg">Ga naar de inhoud</a>
+	<a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-blue-800">Ga naar de inhoud</a>
 
-<header class="border-b border-gray-200">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between">
-    <a href="index.html">
-      <img src="images/logo.png" alt="Logo van Mukhammad Abduev" width="64" height="64" class="rounded">
-    </a>
-    <input type="checkbox" id="menu-knop" class="peer sr-only">
-    <label for="menu-knop" class="cursor-pointer border border-gray-300 rounded-lg block px-3 py-2 md:hidden">Menu</label>
-    <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
-      <ul class="flex flex-col md:flex-row md:gap-2 mt-2 md:mt-0">
-        <li><a href="index.html" aria-current="page" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Home</a></li>
-        <li><a href="portfolio.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Portfolio</a></li>
-        <li><a href="contact.html" class="block px-3 py-2 rounded-lg text-gray-600 hover:bg-gray-100">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+	<header class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between border-b border-gray-200">
+		<p class="text-xl font-bold">Mukhammad Abduev</p>
+		<input type="checkbox" id="menu-knop" class="peer sr-only">
+		<label for="menu-knop" class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focus-visible:outline-2 md:hidden">Menu</label>
+		<nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto">
+			<ul class="flex flex-col md:flex-row md:gap-2">
+				<li><a href="index.html" aria-current="page" class="block rounded-lg bg-blue-100 px-3 py-2 font-semibold text-blue-800 focus-visible:outline-2 focus-visible:outline-blue-700">Home</a></li>
+				<li><a href="portfolio.html" class="block rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-blue-700">Portfolio</a></li>
+				<li><a href="contact.html" class="block rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-blue-700">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-<div class="max-w-6xl mx-auto px-4 py-8 md:flex md:gap-8">
+	<div class="max-w-6xl mx-auto px-4">
+		<div class="grid grid-cols-1 gap-8 py-8 md:grid-cols-3">
 
-  <main id="inhoud" class="md:flex-1 min-w-0">
+			<main id="inhoud" class="md:col-span-2">
 
-    <section class="relative overflow-hidden rounded-lg mb-8 bg-[url(../images/sfeerbeeld1.jpeg)] bg-cover bg-center">
-      <div class="absolute inset-0 bg-[rgba(0,0,0,0.55)]"></div>
-      <div class="relative z-10 px-6 py-16 text-center">
-        <h1 class="text-3xl font-bold text-white mb-2">Hallo, ik ben Ali</h1>
-        <p class="text-white text-lg">SNB-student aan de AP Hogeschool Antwerpen</p>
-        <a href="portfolio.html" class="mt-6 inline-block bg-blue-600 text-white font-bold px-6 py-3 rounded-lg">Bekijk mijn werk</a>
-      </div>
-    </section>
+				<section class="bg-[url(../images/sfeerbeeld1.jpeg)] bg-cover bg-center bg-gray-600 bg-blend-multiply rounded-lg px-6 py-16 text-center">
+					<h1 class="mb-3 text-4xl font-bold tracking-tight text-white">Hallo, ik ben Ali</h1>
+					<p class="mb-6 text-lg text-gray-100">SNB-student aan de AP Hogeschool Antwerpen</p>
+					<a href="portfolio.html" class="inline-flex items-center gap-2 rounded-lg bg-white px-5 py-2 font-semibold text-gray-900 hover:bg-gray-100">
+						Bekijk mijn werk
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true">
+							<path d="M5 12h14M13 6l6 6-6 6"/>
+						</svg>
+					</a>
+				</section>
 
-    <section class="mb-8">
-      <h2 class="text-xl font-bold mb-4">Over mij</h2>
-      <p class="leading-relaxed">
-        Ik ben Mukhammad Abduev, maar iedereen noemt mij Ali. Ik studeer Systeem- en Netwerkbeheer aan de AP Hogeschool. Netwerken beveiligen en opzoekwerk doen in de IT-wereld vind ik interessant.
-      </p>
-      <p class="leading-relaxed mt-3">
-        In mijn vrije tijd heb ik al een homelab opgezet, pc's in elkaar gezet en de Linux command line leren gebruiken. Mijn doel is om later netwerkbeheerder te worden.
-      </p>
-      <p class="mt-4">
-        <a href="contact.html" class="text-blue-600 hover:underline">Neem contact op →</a>
-      </p>
-    </section>
+				<section>
+					<h2 class="text-2xl font-bold mb-4">Over mij</h2>
+					<p class="mb-4 leading-relaxed text-gray-700">
+						Ik ben Mukhammad Abduev, maar iedereen noemt mij Ali. Ik studeer Systeem- en Netwerkbeheer aan de AP Hogeschool. Netwerken beveiligen en opzoekwerk doen in de IT-wereld vind ik interessant.
+					</p>
+					<p class="mb-4 leading-relaxed text-gray-700">
+						In mijn vrije tijd heb ik al een homelab opgezet, pc's in elkaar gezet en de Linux command line leren gebruiken. Mijn doel is om later netwerkbeheerder te worden.
+					</p>
+					<p>
+						<a href="contact.html" class="text-blue-700 no-underline hover:underline">Neem contact op</a>
+					</p>
+				</section>
 
-    <section>
-      <h2 class="text-xl font-bold mb-4">Recente projecten</h2>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+				<section>
+					<h2 class="text-2xl font-bold mb-4">Recente projecten</h2>
+					<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 
-        <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
-          <img src="images/sfeerbeeld1.jpeg" alt="Netwerkkabels aangesloten op een switch" width="660" height="1178" class="w-full aspect-video object-cover">
-          <div class="p-4">
-            <h3 class="font-bold mb-1">Homelab opzetten</h3>
-            <p class="text-sm text-gray-600 mb-2">Een thuis-netwerk met eigen server en virtuele machines opgezet.</p>
-            <a href="project-homelab.html" class="text-blue-600 hover:underline text-sm">Bekijk project →</a>
-          </div>
-        </article>
+						<article class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+							<img src="images/sfeerbeeld1.jpeg" alt="Netwerkkabels aangesloten op een switch" width="660" height="1178" class="aspect-video w-full object-cover">
+							<div class="p-4">
+								<h3 class="font-bold mb-1">Homelab opzetten</h3>
+								<p class="text-sm text-gray-600">Een thuis-netwerk met eigen server en virtuele machines opgezet.</p>
+								<a href="project-homelab.html" class="text-blue-700 no-underline hover:underline">Bekijk project</a>
+							</div>
+						</article>
 
-        <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
-          <img src="images/sfeerbeeld2.jpg" alt="Serverkasten in een datacenter" width="1200" height="801" class="w-full aspect-video object-cover">
-          <div class="p-4">
-            <h3 class="font-bold mb-1">PC bouwen</h3>
-            <p class="text-sm text-gray-600 mb-2">Zelf een pc samengesteld van losse hardware en geconfigureerd.</p>
-            <a href="project-pc-bouwen.html" class="text-blue-600 hover:underline text-sm">Bekijk project →</a>
-          </div>
-        </article>
+						<article class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+							<img src="images/sfeerbeeld2.jpg" alt="Serverkasten in een datacenter" width="1200" height="801" class="aspect-video w-full object-cover">
+							<div class="p-4">
+								<h3 class="font-bold mb-1">PC bouwen</h3>
+								<p class="text-sm text-gray-600">Zelf een pc samengesteld van losse hardware en geconfigureerd.</p>
+								<a href="project-pc-bouwen.html" class="text-blue-700 no-underline hover:underline">Bekijk project</a>
+							</div>
+						</article>
 
-        <article class="bg-white border border-gray-200 rounded-lg overflow-hidden">
-          <img src="images/sfeerbeeld3.jpeg" alt="Een gang in een datacenter met rijen serverkasten" width="1200" height="824" class="w-full aspect-video object-cover">
-          <div class="p-4">
-            <h3 class="font-bold mb-1">Linux CLI</h3>
-            <p class="text-sm text-gray-600 mb-2">De Linux command line leren voor beheer en automatisering.</p>
-            <a href="project-linux-cli.html" class="text-blue-600 hover:underline text-sm">Bekijk project →</a>
-          </div>
-        </article>
+						<article class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+							<img src="images/sfeerbeeld3.jpeg" alt="Een gang in een datacenter met rijen serverkasten" width="1200" height="824" class="aspect-video w-full object-cover">
+							<div class="p-4">
+								<h3 class="font-bold mb-1">Linux CLI</h3>
+								<p class="text-sm text-gray-600">De Linux command line leren voor beheer en automatisering.</p>
+								<a href="project-linux-cli.html" class="text-blue-700 no-underline hover:underline">Bekijk project</a>
+							</div>
+						</article>
 
-      </div>
-      <p class="mt-4">
-        <a href="portfolio.html" class="text-blue-600 hover:underline">Alle projecten bekijken →</a>
-      </p>
-    </section>
+					</div>
+					<p>
+						<a href="portfolio.html" class="text-blue-700 no-underline hover:underline">Alle projecten bekijken</a>
+					</p>
+				</section>
 
-  </main>
+			</main>
 
-  <aside class="mt-8 md:mt-0 md:w-64 shrink-0">
+			<aside class="bg-gray-100 p-4 rounded-lg">
 
-    <div class="bg-gray-100 rounded-lg p-6 text-center">
-      <img src="images/profielfoto.jpg" alt="Profielfoto van Ali" width="400" height="400" class="rounded-full w-32 h-32 object-cover mx-auto mb-4">
-      <p class="font-bold">Mukhammad Abduev</p>
-      <p class="text-sm text-gray-600">Ali</p>
-      <p class="text-blue-600 text-sm mt-1">SNB – AP Hogeschool</p>
+				<div class="flex items-center gap-4">
+					<img src="images/profielfoto.jpg" alt="Profielfoto van Ali" width="400" height="400" class="size-24 rounded-full object-cover">
+					<div>
+						<p class="text-xl font-bold">Mukhammad Abduev</p>
+						<p class="text-gray-600">SNB - AP Hogeschool</p>
+					</div>
+				</div>
 
-      <p class="mt-4">
-        <a href="mailto:s167266@ap.be" class="inline-flex rounded-full p-2 text-blue-600 hover:bg-gray-200">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect width="20" height="16" x="2" y="4" rx="2"/>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-          </svg>
-          <span class="sr-only">Stuur een e-mail naar s167266@ap.be</span>
-        </a>
-      </p>
-    </div>
+				<p>
+					<a href="mailto:s167266@ap.be" class="inline-flex rounded-full p-2 text-blue-700 hover:bg-blue-50">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true">
+							<rect x="3" y="5" width="18" height="14" rx="2"/>
+							<path d="m3 7 9 6 9-6"/>
+						</svg>
+						<span class="sr-only">Stuur me een e-mail</span>
+					</a>
+				</p>
 
-    <div class="bg-gray-100 rounded-lg p-6 mt-4">
-      <h2 class="font-bold mb-3">Vaardigheden</h2>
-      <ul class="space-y-1 text-gray-600 text-sm">
-        <li>Netwerken (CCNA)</li>
-        <li>Linux CLI</li>
-        <li>Virtualisatie</li>
-        <li>Netwerk beveiliging</li>
-        <li>Hardware assemblage</li>
-        <li>Windows Server</li>
-      </ul>
-    </div>
+				<h2 class="font-bold mb-2">Vaardigheden</h2>
+				<p class="text-sm text-gray-600">Netwerken (CCNA), Linux CLI, Virtualisatie, Netwerk beveiliging, Hardware assemblage, Windows Server.</p>
 
-  </aside>
+			</aside>
 
-</div>
+		</div>
+	</div>
 
-<footer class="border-t border-gray-200 py-4">
-  <div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-600">
-    <p>&copy; 2026 Mukhammad Abduev – AP Hogeschool Antwerpen</p>
-  </div>
-</footer>
+	<footer class="border-t border-gray-200 py-4 text-center text-sm text-gray-600">
+		<p>&copy; 2026 Mukhammad Abduev - AP Hogeschool Antwerpen</p>
+	</footer>
 
 </body>
 </html>
